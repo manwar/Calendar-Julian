@@ -1,6 +1,6 @@
 package Calendar::Julian;
 
-$Calendar::Julian::VERSION   = '0.01';
+$Calendar::Julian::VERSION   = '0.02';
 $Calendar::Julian::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ Calendar::Julian - Interface to Julian Calendar.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
@@ -40,22 +40,36 @@ sub BUILD {
 
 =head1 DESCRIPTION
 
-Simple Julian Calendar interface.
+The Julian  calendar  was  proclaimed  by Julius Cesar  in  46 B.C. and underwent
+several modifications before reaching its final form in 8 C.E.The Julian calendar
+differs  from  the Gregorian only in the determination of leap years, lacking the
+correction  for  years divisible by 100 and 400 in the Gregorian calendar. In the
+Julian calendar, any  positive year  is  a leap year if divisible by 4. (Negative
+years are leap years if the absolute value divided by 4 yields a remainder of 1.)
+Days are considered to begin at midnight.
+
+In the Julian calendar the average year has a  length of 365.25 days. compared to
+the actual solar tropical year of 365.24219878 days.The calendar thus accumulates
+one  day  of error with respect to the solar year every 128 years. Being a purely
+solar  calendar, no  attempt  is  made to  synchronise the start of months to the
+phases of the Moon.
 
     +-----------------------------------------------------------------------------------+
-    |                                  March [2016 BE]                                  |
+    |                                  July [2017 BE]                                   |
     +-----------+-----------+-----------+-----------+-----------+-----------+-----------+
     |    Sunday |    Monday |   Tuesday | Wednesday |  Thursday |    Friday |  Saturday |
     +-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-    |                       |         1 |         2 |         3 |         4 |         5 |
+    |                                                           |         1 |         2 |
     +-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-    |         6 |         7 |         8 |         9 |        10 |        11 |        12 |
+    |         3 |         4 |         5 |         6 |         7 |         8 |         9 |
     +-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-    |        13 |        14 |        15 |        16 |        17 |        18 |        19 |
+    |        10 |        11 |        12 |        13 |        14 |        15 |        16 |
     +-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-    |        20 |        21 |        22 |        23 |        24 |        25 |        26 |
+    |        17 |        18 |        19 |        20 |        21 |        22 |        23 |
     +-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-    |        27 |        28 |        29 |        30 |        31 |                       |
+    |        24 |        25 |        26 |        27 |        28 |        29 |        30 |
+    +-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+    |        31 |                                                                       |
     +-----------+-----------+-----------+-----------+-----------+-----------+-----------+
 
 The package L<App::calendr> provides command line tool  C<calendr> to display the
