@@ -1,5 +1,8 @@
 Revision history for Calendar::Julian
 
+0.03  Tue Jan 23 12:45:00 2018
+      - Added dependency on Date::Julian::Simple v0.05.
+
 0.02  Sun Jul 23 11:05:00 2017
       - Updated pod section "DESCRIPTION".
 
