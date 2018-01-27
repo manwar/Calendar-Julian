@@ -1,5 +1,8 @@
 Revision history for Calendar::Julian
 
+0.06  Fri Jan 26 09:40:00 2018
+      - Using namespace::autoclean instead.
+
 0.05  Thu Jan 25 13:55:00 2018
       - Added test scripts (t/meta-json.t and t/meta-yml.t).
 
