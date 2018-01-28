@@ -31,7 +31,7 @@ WriteMakefile(
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
         provides    => {
-            'Calendar::Julian' => { file => 'lib/Calendar/Julian.pm', version => '0.06' },
+            'Calendar::Julian' => { file => 'lib/Calendar/Julian.pm', version => '0.07' },
         },
         resources => {
             repository => {
